@@ -276,15 +276,19 @@ export function NotebookInterfaceComponent() {
                   transition={{ duration: 0.5, delay: 0.2 }}
                 >
                   <h3 className="text-lg font-medium mb-4 text-white">Summary</h3>
-                  <ScrollArea className="h-[300px] pr-4 border border-[#3A3A3A] rounded-lg p-4 bg-[#2A2A2A]">
-                    <p className="text-gray-300 leading-relaxed">
-                      The texts explore the potential of quantum computing and its applications in various fields. The first source discusses the concept of "quantum supremacy" and describes how a 54-qubit processor named "Sycamore" was able to outperform the world's fastest supercomputer in a specific computational task. This accomplishment highlights the potential of quantum computers to tackle problems beyond the reach of classical computers.
-                      
-                      The second source delves into the "NISQ" era of quantum computing, where noisy intermediate-scale quantum computers are expected to be available soon. The text discusses the limitations of these noisy devices and how they might still be useful for specific tasks like quantum simulation and optimization.
-                      
-                      Finally, the third source examines the intersection of quantum computing and machine learning, focusing on how quantum algorithms might speed up tasks like matrix inversion and recommendation systems. The text also discusses potential limitations and bottlenecks in applying quantum computing to machine learning problems.
-                    </p>
-                  </ScrollArea>
+                  <div className="relative h-[300px] border border-[#3A3A3A] rounded-lg bg-[#2A2A2A]">
+                    <ScrollArea className="h-full p-4">
+                      <div className="pr-4">
+                        <p className="text-gray-300 leading-relaxed">
+                          The texts explore the potential of quantum computing and its applications in various fields. The first source discusses the concept of "quantum supremacy" and describes how a 54-qubit processor named "Sycamore" was able to outperform the world's fastest supercomputer in a specific computational task. This accomplishment highlights the potential of quantum computers to tackle problems beyond the reach of classical computers.
+                          
+                          The second source delves into the "NISQ" era of quantum computing, where noisy intermediate-scale quantum computers are expected to be available soon. The text discusses the limitations of these noisy devices and how they might still be useful for specific tasks like quantum simulation and optimization.
+                          
+                          Finally, the third source examines the intersection of quantum computing and machine learning, focusing on how quantum algorithms might speed up tasks like matrix inversion and recommendation systems. The text also discusses potential limitations and bottlenecks in applying quantum computing to machine learning problems.
+                        </p>
+                      </div>
+                    </ScrollArea>
+                  </div>
                 </motion.div>
               </div>
 

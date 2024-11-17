@@ -91,16 +91,7 @@ export function SharedLayout({ children }: SharedLayoutProps) {
           >
             <ArrowLeft className="h-6 w-6" />
           </Button>
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon" className="text-white">
-                <Menu className="h-6 w-6" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56 bg-[#1C1C1C] text-white border-gray-800">
-              {/* Add your menu items here */}
-            </DropdownMenuContent>
-          </DropdownMenu>
+
           <BookOpen className="h-6 w-6 text-blue-400" />
           <h1 className="text-2xl font-bold">B.Tech Buddy</h1>
         </div>
